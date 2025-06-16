@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-2</title>
+    <style>
+        h3{
+            color: rgb(36, 213, 84);
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .container > div{
+            flex: 1 1 200px;
+            border: 2px solid gray;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 10px;
+        }
+        @media (max-width: 768px) {
+            .container > div {
+                flex: 1 1 100%; /* Flex-basis: 100% for smaller screens */
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>Media Quary for Columns-Increase or Decrease the screen size to see the changes</h3>
+    <div class="container">
+        <div class="Name1">
+            <h4>Name-1</h4>
+            <p>I am Tanmay Satish Kakade</p>
+        </div>
+        <div class="Name2">
+            <h4>Name-2</h4>
+            <p>I am Tilak Satish Kakade</p>
+        </div>
+        <div class="Name3">
+            <h4>Name-3</h4>
+            <p>I am Vrushali satish Kakade</p>
+        </div>
+        <div class="Name4">
+            <h4>Name-4</h4>
+            <p>I am Vaishali Satish kakade</p>
+        </div>
+    </div>
+</body>
+</html>
