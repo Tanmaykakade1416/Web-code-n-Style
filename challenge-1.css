@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+.header-selection{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+.challenge{
+    padding: 20px 20px 20px 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border-color: blueviolet;
+    margin: 10px;
+}
+input[type="submit"]{
+    width: 20%;
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: medium;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: green;
+}
+
