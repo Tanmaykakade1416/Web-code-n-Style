@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge-9(Grid-2)</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-template-columns: 1fr 4fr 0.75fr;
+            height: 720px;
+        }
+        .item{
+            background-color: burlywood;
+            border: 3px solid rgb(24, 22, 22);
+            padding: 10px;
+            font-weight: bold;
+        }
+        #nav{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #header{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #footer{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="nav">NAV</div>
+        <div class="item" id="header">HEADER</div>
+        <div class="item" id="article">ARTICLE</div>
+        <div class="item" id="ads">ADS</div>
+        <div class="item" id="footer">FOOTER</div>
+    </div>
+</body>
+</html>
