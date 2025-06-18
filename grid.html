@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /*repeat(3, 1fr) [SHORTCUT{For good responsiveness}=> grid-template-columns: repeat(auto-fill,minmax(200px,1fr);]*/
+            grid-gap: 20px;
+            grid-auto-rows: 100px;    /*for minimum==> minmax(100px,{max});*/
+            grid-auto-columns: 50px;
+           /* column-gap: 120px;       [To change Margin]
+            row-gap: 120px;*/
+        }
+        .items{
+            background-color: aquamarine;
+            border: 3px solid green;
+        }
+        #item1{
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-column-end: 2;
+            grid-row-end: 2;         /*To shift the BOX in diffrent places*/
+        }
+        #item2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="item1">Dabba 1</div>
+        <div class="items" id="item2">Dabba 2</div>
+        <div class="items">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+        <div class="items">Dabba 5</div>
+    </div>
+</body>
+</html>
